@@ -1,0 +1,114 @@
+#container,#menubar{
+	display: inline-block; float: right;
+}
+.gradient{
+	height: 85px;
+	background-image: -o-linear-gradient(0deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
+	background-image: -moz-linear-gradient(0deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
+	background-image: -webkit-linear-gradient(90deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
+	background-image: linear-gradient(0deg,rgba(27,30,38,0),rgba(27,30,38,0.5) 20%, rgba(27,30,38,1) 40%);
+}
+#navigation{
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	ul{
+		float: right;
+		margin: 0;
+		padding-top: 25px;
+		li{
+			width: auto;
+			margin: 10px 10px 10px 10px;
+			display: inline-block;
+			font-family:'Lato';
+			color: white;
+			margin: 5px;
+			font-size: 1.2vw;
+			text-transform: capitalize;
+			letter-spacing: 0.2vw;
+			font-weight: bold;
+			transition: all 0.5s ease;
+			a {
+				display: inline-block;
+				padding: 10px 20px 10px 20px;
+				font-size: 12px;
+				text-decoration: none;
+				background:none;
+				border:none;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: bold;
+				transition: all 0.2s ease;
+			}
+			.active {
+				color:#838b91;
+			}
+		}
+	}
+	.navselect:hover{
+		cursor: pointer; color:#838b91;
+	}
+}
+
+#menu-icon
+{
+	position:absolute;
+	border: none;
+	display: none;
+	cursor: pointer;
+	color: white;
+	font-size: 30px;
+}
+#logo{
+	display: inline-block;
+	position: absolute;
+	left: 40px;
+	top:25px;
+	z-index: 0;
+	a{
+		display: inline-block;
+		img{
+			width: 97px;
+			height:48px;
+		}
+	}
+}
+#initialpage-container{
+	background-size: cover; width: 100%; height: 95%; position: relative;
+	#initialpage{ /*for layered background*/
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	#fulltextcontainer,#fulltextcontainer-top{/*helps with vertical align*/
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: table;
+		z-index: 0;
+		left: 0;
+		top: 0;
+		margin: 0;
+	}
+	#fulltext,#fulltext-top{
+		display: table-cell;
+		vertical-align: middle;
+		color: white;
+		width:80%;
+		text-align: center;
+	}
+	#fulltext-top{
+		h3{
+			color: rgba(255,255,255,0.5);
+			text-align: left;
+		}
+	}
+	#fulltextcontainer-top{
+		height:80%;
+	}
+	#fulltext h3,#fulltext-top h3{
+		width: 100%;
+		font-size:9vw;
+	}
+}

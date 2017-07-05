@@ -1,0 +1,67 @@
+.proj-overview{
+	font-family: 'Indie Flower'; 
+	margin-top: 0;
+	text-transform: capitalize; 
+	color: #FEE2C3;
+	img{
+		height:100px; 
+		width:auto;
+		box-shadow:none;
+	}
+	h1{
+		margin-top: 0;
+	}
+}
+.proj-content{
+	width: 80%;
+	padding: 10%;
+	text-align: center;
+	.proj-preview{
+		img{
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			border: 1px solid #c5c5c5;
+			-webkit-box-shadow: 18px 12px 45px -14px rgba(0,0,0,1);
+			-moz-box-shadow: 18px 12px 45px -14px rgba(0,0,0,1);
+			box-shadow: 18px 12px 45px -14px rgba(0,0,0,1);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+	}
+	h1{
+		text-align: center;
+	}
+	.arrow{
+		position:absolute;
+		top:45%; 
+		height:25px;
+		width:25px; 
+		box-shadow:none; 
+		border:none;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.description{
+		margin-bottom: 40px;
+		color:#838b91;
+		span{
+			font-size: 1.4vw; 
+			text-transform: capitalize; 
+			letter-spacing: 0.1vw;
+			font-weight: bold;  
+		}
+	}
+	.readMore{
+		border:none;
+		font-weight:normal;
+		background-color:transparent;
+		color:#14a6d7;
+		&:hover{
+			color:#0b7da3;
+			cursor: pointer;
+		}
+	}
+}

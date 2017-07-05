@@ -1,0 +1,137 @@
+body{
+ 	background-size: cover; background-attachment: fixed; background-color: rgb(27,30,38);
+}
+strong{
+	color: white;
+	font-weight: normal;
+}
+p{
+	color: #A4B5B8; 
+	text-align:left; 
+	font-size: 26px; 
+	line-height: 170%; 
+	margin: 0 auto; 
+	display: block;
+}
+article{
+	display: block;
+	text-align: left;
+	font-size: 20px;
+	line-height: 160%;
+	font-weight: normal;
+}
+#initialpageimg{
+	height: 100%;
+}
+#social{
+	position:relative;
+	left: 10%; 
+	margin-bottom:5%; 
+	display: table; 
+	z-index: 1;
+	&:hover img{
+		opacity: 0.7;	
+	}
+	a{
+		margin-right: 10px;
+	}
+	img{
+		height: 28px; width: 28px;
+	}
+	img:hover{
+		opacity: 1;
+	}
+	hr{
+		width: 100px; 
+		display: inline-block; 
+		margin-right: 25px;
+	}
+	div{
+		margin: 0; 
+		padding: 0; 
+		vertical-align: middle; 
+		display: table-cell;
+	}
+}
+
+#content-container{
+	color: white; 
+	border:none; 
+	padding: 5%;
+	.content{
+		margin: 0;
+		padding: 10% 0;
+	}
+}
+
+.proj-container-container{
+	vertical-align:text-top; 
+	display: inline-block; 
+	margin: 1%;
+	width: 30%; 
+	transition: all 0.5s ease; 
+	-webkit-transition: all 1s ease;
+	opacity: 0; 
+	transform: translate(0%,40%);
+	&:after{
+		content: '';	
+		background: transparent;
+		height: 1px;
+		width: 0%;
+		display: block;
+		transition: all 0.3s ease;
+	}
+	&:hover:after{
+		cursor: pointer; 
+		width: 100%; 
+		background: white;
+	}
+	.content-proj-container{
+		 display: inline-block; 
+		 padding: 22% 12%; 
+		 width: 76%; 
+		 background-color: rgba(15,15,15,0.7);
+		 text-decoration: none;
+		 &:hover p{
+		 	color: white;
+		 }
+		 &:hover li{
+		 	color: #838b91;
+		 }
+		 ul{
+		 	width: 100%;
+		 }
+		 li{
+		 	font-size: 1.5vw; 
+		 	line-height: 130%; 
+		 	margin: 0;	
+		 }
+		 span{
+		 	width: 20px; 
+		 	display: inline-block;
+		 }
+		 p{
+		 	margin-bottom: 30px; 
+		 	font-size: 2vw;
+		 	text-align: left; 
+		 	text-transform: capitalize;
+			border-bottom: 1px solid transparent; 
+			transition: all 0.5s ease; 
+			display: inline-block;
+		 }
+		 p:after{
+		 	content: ''; 
+		 	display: block; 
+		 	height: 1.5px; 
+		 	width: 20%; 
+		 	background: white; 
+		 	transition: all 0.3s ease; 
+		 	-webkit-transform: all 0.3s ease;
+		 }
+		 &:hover p:after{
+		 	cursor: pointer; 
+		 	width: 100%; 
+		 	background: white;
+		 }
+	}
+}

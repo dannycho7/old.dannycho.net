@@ -1,0 +1,78 @@
+.album{
+	background-color:white;
+	color: rgba(0,0,0,0.5);
+	width: 25.5%;
+	box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 6px;
+	padding: 1.25% 0.75% 0.75% 0.75%;
+	margin: 3%;
+	display: inline-block;
+	position: relative;
+	-webkit-transform:rotate(-2deg);
+	-moz-transform:rotate(-2deg);
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+
+	&:nth-child(even){
+		-webkit-transform:rotate(2deg);
+		-moz-transform:rotate(2deg);
+	}
+	&:nth-child(3n){
+		-webkit-transform:none;
+		-moz-transform:none;
+		position: relative;
+		top: -5px;
+	}
+	&:nth-child(4n){
+		position: relative;
+		top: 10px;
+		left: 5px;
+	}
+	&:nth-child(5n){
+		-webkit-transform:rotate(5deg);
+		-moz-transform:rotate(5deg);
+	}
+	&:nth-child(8n){
+		position: relative;
+		right: 8px;
+		top: 10px;
+	}
+	&:nth-child(11n){
+		position: relative;
+		top: 3px;
+		left: -5px;
+	}
+	&:hover{
+		-webkit-transform:none;
+		-moz-transform:none;
+		-webkit-transform:scale(1.3);
+		-moz-transform:scale(1.3);
+	}
+	&:hover input{
+		filter:grayscale(50%);
+		-webkit-filter:brightness(50%);
+	}
+	&:hover p{
+		opacity: 1;
+	}
+	input{
+		width: 100%;
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+	}
+	p{
+		font-size: 2vw;
+		margin: 2% 0%;
+		opacity: 0.6;
+		width: 100%;
+		color: black;
+		left: 0;
+		transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+	}
+	span{
+		position: absolute;
+		bottom: 2%;
+		right: 2%;
+		font-size: 1vw;
+	}
+}

@@ -1,0 +1,25 @@
+#content-container #photo-container{
+	padding: 5% 0;
+}
+.photonav{
+	p{
+		font-family: 'Poiret One';
+		font-size: 1.5vw;
+		margin-left: 2%; 
+	}
+	img{
+		vertical-align: text-bottom;
+		margin-right: 0.2%;
+		height: 27px;
+	}
+	.info{
+		margin-bottom: 0;
+	}
+}
+#photo-container>img{
+	width: 24.5%;
+	margin: 0% 0.25%;
+}
+form{
+	text-align: center;
+}
