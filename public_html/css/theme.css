@@ -1,19 +1,4 @@
 /* Central point of the scss imports */
-@font-face {
-  font-family: 'Indie Flower';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Indie Flower"), local("IndieFlower"), url(fonts/10JVD_humAd5zP2yrFqw6qRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(fonts/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format("woff"); }
-@font-face {
-  font-family: 'Poiret One';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Poiret One"), local("PoiretOne-Regular"), url(fonts/HrI4ZJpJ3Fh0wa5ofYMK8b3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff"); }
 #container, #menubar {
   display: inline-block;
   float: right; }
@@ -54,10 +39,11 @@
         border: none;
         color: white;
         text-transform: uppercase;
-        font-family: 'Lato';
         letter-spacing: 1px;
         font-weight: bold;
         transition: all 0.2s ease; }
+      #navigation ul li .active {
+        color: #838b91; }
   #navigation .navselect:hover {
     cursor: pointer;
     color: #838b91; }
@@ -124,10 +110,12 @@
   font-family: 'Poiret One';
   font-size: 1.5vw;
   margin-left: 2%; }
+
 .photonav img {
   vertical-align: text-bottom;
   margin-right: 0.2%;
   height: 27px; }
+
 .photonav .info {
   margin-bottom: 0; }
 
@@ -197,7 +185,7 @@ form {
   background-color: white;
   color: rgba(0, 0, 0, 0.5);
   width: 25.5%;
-  box-shadow: rgba(0, 0, 0, 0.24706) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.247059) 0px 3px 6px;
   padding: 1.25% 0.75% 0.75% 0.75%;
   margin: 3%;
   display: inline-block;
@@ -378,8 +366,8 @@ article {
 .proj-container-container {
   vertical-align: text-top;
   display: inline-block;
-  margin: 1% 2% 1% 0;
-  width: 31%;
+  margin: 1%;
+  width: 30%;
   transition: all 0.5s ease;
   -webkit-transition: all 1s ease;
   opacity: 0;
@@ -438,7 +426,6 @@ article {
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .photonav p {
     font-size: 18px; }
-
   #photo-container img {
     margin: 0% 0.5%;
     width: 99%; }
@@ -448,39 +435,31 @@ article {
     #photo-container .album p {
       font-size: 18px;
       font-weight: bold; }
-
   h1 {
     font-size: 40px; }
-
   #content-container {
     padding: 0; }
-
   #webpage {
     padding: 0 5%; }
-
   .proj-content {
     width: 96%;
     padding: 100px 2%; }
     .proj-content .description span {
       font-size: 22px; }
-
   .proj-container-container {
     width: 47%; }
     .proj-container-container .content-proj-container p {
       font-size: 26px; }
     .proj-container-container .content-proj-container li {
       font-size: 20px; }
-
   #initialpage-container {
     height: 75%; }
     #initialpage-container #fulltextcontainer-top {
       height: 85%; }
     #initialpage-container #fulltext, #initialpage-container #fulltext-top {
       vertical-align: bottom; }
-
   p {
     font-size: 20px; }
-
   #social a {
     margin-right: 3px; }
     #social a img {
@@ -488,11 +467,11 @@ article {
       height: 20px; }
   #social hr {
     width: 50px; } }
+
 @media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (orientation: portrait) {
   /* portrait phones */
   #container-before {
     display: none; }
-
   #container {
     left: 0;
     top: 0;
@@ -505,17 +484,14 @@ article {
     width: 100%;
     height: 100%;
     z-index: 4; }
-
   .proj-overview p {
     font-size: 24px; }
-
   #initialpage-container {
     height: 45%; }
     #initialpage-container #fulltextcontainer-top {
       height: 85%; }
     #initialpage-container #fulltext, #initialpage-container #fulltext-top {
       vertical-align: middle; }
-
   #menubar {
     float: none;
     display: table-cell;
@@ -540,7 +516,6 @@ article {
           display: inline; }
           #menubar ul li a:hover {
             cursor: pointer; }
-
   #menu-icon {
     display: inline-block;
     position: fixed;
@@ -553,18 +528,15 @@ article {
       width: 50px; }
     #menu-icon #exit {
       display: none; }
-
   .proj-container-container .content-proj-container p {
     font-size: 20px; }
   .proj-container-container .content-proj-container li {
     font-size: 16px; }
-
   .proj-content .description span {
     font-size: 18px; } }
+
 @media only screen and (max-device-width: 667px) and (orientation: portrait) {
   .proj-container-container .content-proj-container p {
     font-size: 26px; }
   .proj-container-container .content-proj-container li {
     font-size: 22px; } }
-
-/*# sourceMappingURL=theme.css.map */
