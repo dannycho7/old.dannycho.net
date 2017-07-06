@@ -1,6 +1,6 @@
 <h1 id = 'projh1'>Project Overview</h1>
 
-<?php include '../modules/projinfoXML.php'; ?>
+<?php include '../resources/views/modules/projinfoXML.php'; ?>
 
 @foreach ($projInfo->project as $proj)
 	<div class="proj-container-container">
