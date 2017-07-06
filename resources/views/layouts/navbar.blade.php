@@ -1,7 +1,7 @@
 <div id="navigation" class="gradient">
   <div id = "logo">
-    <a href="/">
-      <img src="{{ URL::asset('images/social/logo1.png') }}" href="#" />
+    <a href="{{ URL::route('index') }}">
+      <img src="{{ URL::asset('images/social/logo1.png') }}" />
     </a>
   </div>
   <a id="menu-icon" class="navselect" onclick="reveal()">

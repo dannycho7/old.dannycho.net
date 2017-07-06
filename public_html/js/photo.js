@@ -20,13 +20,13 @@ function showPhoto(str){
 		if(this.readyState == 4 && this.status == 200){
 			document.body.innerHTML = this.responseText;
 			if(str != ""){
-				window.history.pushState({}, "Danny's Personal Site", "photo?folder="+str);
+				window.history.pushState({}, "Danny's Personal Site", "photos?folder=" + str);
 			}
 			else{
-				window.history.pushState({}, "Danny's Personal Site", "photo");
+				window.history.pushState({}, "Danny's Personal Site", "photos");
 			}
 		}
 	};
-	xhttp.open("GET","photo?folder=" + str,true);
+	xhttp.open("GET","photos?folder=" + str,true);
 	xhttp.send();	
 }
