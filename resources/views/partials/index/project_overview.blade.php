@@ -1,14 +1,12 @@
 <h1 id = 'projh1'>Project Overview</h1>
 
-<?php include '../resources/modules/projinfoXML.php'; ?>
-
-@foreach ($projInfo->project as $proj)
+@foreach ($projects as $proj)
 	<div class="proj-container-container">
 		<a href="projects#{{ $proj['name'] }}" class="content-proj-container">
-			<p>{{ $proj['displayname'] }}</p>
+			<p>{{ $proj['name'] }}</p>
 			<ul>
 				<li>{{ $proj['year'] }}</li>
-				<li>{{ $proj['accomplishment'] }}</li>
+				<li>{{ $proj['headline'] }}</li>
 				<li>{{ $proj['purpose'] }}</li>
 			</ul>
 		</a>

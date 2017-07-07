@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Danny's Personal Website</title>
+    <meta property="og:title" content="Danny's Personal Website">
+    <meta property="og:type" content="Personal.Website">
+    <meta property="og:url" content="http://dannycho.net">
+    <meta property="og:image" content="http://dannycho.net/public_html/images/project/PersonalSite.png">
+    <title> @yield('title') </title>
+    <link rel="canonical" href="http://dannycho.net">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/fonts.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/theme.css') }}">
   </head>
@@ -40,8 +45,5 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-    <script src = 'js/web.js'></script>
-    <script src = 'js/index.js'></script>
-    <script src = 'js/photo.js'></script>
-    <script type="text/javascript" src="js/projects.js"></script>
+    <script src = 'js/build.js'></script>
 </html>

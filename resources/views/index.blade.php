@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Danny Cho (dannycho7)
+@endsection
+
 @section('content')
 
     @include('partials.landing', ['messagefront' => 'Software Developer', 'messagebehind' => 'Who I am. . .'])
