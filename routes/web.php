@@ -10,17 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Models\Project;
 
 Route::get('/', function () {
-    return view('index');
+    return view('index')->with('projects', Project::all()->sortByDesc('id'));
 })->name('index');
-
-Route::get('/projects', function() {
-	return view('projects');
-})->name('projects');
 
 Route::get('/photos', function() {
 	return view('photos');
 })->name('photos');
 
-Route::get('/api/{id}', 'TestController@showProfile');
+Route::get('/projects', 'ProjectController@showAll')->name('projects');
+Route::get('/projects/{id}/description', 'ProjectController@projectDescription');
