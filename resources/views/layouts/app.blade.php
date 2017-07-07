@@ -11,7 +11,7 @@
     <title> @yield('title') </title>
     <link rel="canonical" href="http://dannycho.net">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/fonts.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/application.css') }}">
   </head>
   <body onresize="menuswitch()">
     <?php
