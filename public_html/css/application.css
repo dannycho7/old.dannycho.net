@@ -431,7 +431,7 @@ article {
     width: 99%; }
   #photo-container .album {
     width: 40%;
-    margin: 4.25%; }
+    margin: 4%; }
     #photo-container .album p {
       font-size: 18px;
       font-weight: bold; }
@@ -540,3 +540,20 @@ article {
     font-size: 26px; }
   .proj-container-container .content-proj-container li {
     font-size: 22px; } }
+
+@media only screen and (max-device-width: 440px) and (orientation: portrait) {
+  .proj-container-container {
+    width: 100%;
+    margin: 15px 0; }
+  .proj-content .description span {
+    font-size: 14px; }
+  #photo-container img {
+    margin: 1%;
+    width: 98%; }
+  #photo-container .album {
+    width: 80%;
+    margin: 4%;
+    padding: 10px 7px 7px 7px; }
+    #photo-container .album p {
+      font-size: 18px;
+      font-weight: bold; } }
