@@ -22,3 +22,7 @@ Route::get('/photos', function() {
 
 Route::get('/projects', 'ProjectController@showAll')->name('projects');
 Route::get('/projects/{id}/description', 'ProjectController@projectDescription');
+
+Route::get('/resume', function() {
+	return response()->file('../Resume_DannyHyunCho.pdf');
+})->middleware('auth.basic');
