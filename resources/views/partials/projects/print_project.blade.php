@@ -30,7 +30,7 @@
     </div>
     @if(isset($proj['download_link']))
       <div>
-        <a target='_blank' href="{{ $proj['link'] }}" class='readMore'><span>View Here</span></a>
+        <a target='_blank' href="{{ $proj['download_link'] }}" class='readMore'><span>View Here</span></a>
       </div>
     @endif
     @if(isset($proj['github_link']))
