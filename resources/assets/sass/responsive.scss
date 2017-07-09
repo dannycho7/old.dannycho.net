@@ -1,4 +1,21 @@
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+	#navigation.gradient {
+		height: 50px;
+		#logo {
+			left: 20px;
+			top: 10px;
+			img {
+				width: 72px;
+				height: 36px;
+			}
+		}
+		.menu-content {
+			padding-top: 5px;
+			li {
+				font-size: 10px;
+			}
+		}
+	}
 	.photonav{
 		p{
 			font-size: 18px;
@@ -32,7 +49,7 @@
 		padding: 100px 2%;
 		.description{
 			span{
-				font-size: 22px;
+				font-size: 20px;
 			}
 		}
 	}
@@ -63,8 +80,8 @@
 		a{
 			margin-right: 3px;
 			img{
-				width: 20px;
-				height: 20px;
+				width: 25px;
+				height: 25px;
 			}
 		}
 		hr{
@@ -73,119 +90,100 @@
 	}
 }
 
-@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (orientation: portrait){
+@media only screen and (max-width: 400px), only screen and (orientation: portrait){
 	/* portrait phones */
-	#container-before{
+
+	/* Removing landing page partial on portrait mode, because too hard to maintain*/
+	#initialpage-container {
 		display: none;
 	}
-	#container{
-		left: 0;
-		top:0;
-		position: fixed;
-		float: none;
-		display: table;
-		visibility: hidden;
-		opacity: 0;
-		background-color: rgba(21,24,28,0.95);
-		width: 100%;
-		height: 100%;
-		z-index: 4;
+	#webpage {
+		padding-top: 70px;
 	}
+
 	.proj-overview{
+		img {
+			height: 60px;
+		}
 		p{
 			font-size: 24px;
 		}
 	}
-	#initialpage-container{
-		height: 45%;
-		#fulltextcontainer-top{
-			height: 85%;
-		}
-		#fulltext,#fulltext-top{
-			vertical-align: middle;
-		}
-	}
-	#menubar{
-		float: none; 
-		display: table-cell; 
-		vertical-align: middle; 
-		text-align: center; 
-		position: relative; 
-		z-index: 3;
-		ul{
-			display: block; 
-			float: none; 
-			padding: 0;
-			li{
-				text-align: center; 
-				border:none; 
-				float: none; 
-				margin:0; 
-				padding: 10%; 
-				display: block; 
-				transition: all 0.5s ease;
-				a{
-					font-size: 40px; 
-					display: inline;
-					&:hover{
-						cursor: pointer;
-					}
-				}
+	#navigation.gradient {
+		#menu-icon{
+			display: inline-block; 
+			position: fixed; 
+			z-index: 10; 
+			right: 0; 
+			top: 0; 
+			padding: 10px;
+			img{
+				height: 30px; 
+				width: 30px;
 			}
-		} 
-	}
-	#menu-icon{
-		display: inline-block; 
-		position: fixed; 
-		z-index: 10; 
-		right: 0; 
-		top: 0; 
-		padding: 20px;
-		img{
-			height: 50px; 
-			width: 50px;
+			#exit{
+				display: none;
+			}
 		}
-		#exit{
+		#container-before{
 			display: none;
 		}
-	}
-	.proj-container-container{
-		.content-proj-container{ 
-			p{
-				font-size: 20px;
-			}	
-			li{
-				font-size: 16px;
+		#container {
+			overflow-y: scroll;
+			left: 0;
+			top:0;
+			position: fixed;
+			float: none;
+			display: table;
+			visibility: hidden;
+			opacity: 0;
+			background-color: rgba(21,24,28,0.95);
+			width: 100%;
+			height: 200%;
+			z-index: 4;
+			#menubar{
+				float: none; 
+				display: table; 
+				text-align: center; 
+				position: relative; 
+				z-index: 3;
+				height: 50%;
+				width: 100%;
+				ul.menu-content{
+					display: table-cell;
+					vertical-align: middle; 
+					float: none; 
+					padding: 0;
+					li{
+						text-align: center; 
+						border:none; 
+						float: none; 
+						margin:0; 
+						padding: 10%; 
+						display: block; 
+						transition: all 0.5s ease;
+						font-size: 40px; 
+						a {
+							font-size: inherit;
+						}
+						&:hover{
+							cursor: pointer;
+						}
+					}
+				} 
 			}
 		}
 	}
-	.proj-content{
-		.description{
-			span{
-				font-size: 18px;
-			}
-		}
-	}
-}
-@media only screen and (max-device-width: 667px) and (orientation: portrait){
-	.proj-container-container{
-		.content-proj-container{ 
-			p{
-				font-size: 26px;
-			}	
-			li{
-				font-size: 22px;
-			}
-		}
-	}
-}
-
-@media only screen and (max-device-width: 440px) and (orientation : portrait) {
 	.proj-container-container{
 		width: 100%;
 		margin: 15px 0;
+		.content-proj-container{ 
+			padding-top: 15%;
+			padding-bottom: 15%;
+		}
 	}
 	.proj-content{
+		padding-top: 0px;
 		.description{
 			span{
 				font-size: 14px;

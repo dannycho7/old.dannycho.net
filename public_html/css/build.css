@@ -424,6 +424,18 @@ article {
       background: white; }
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  #navigation.gradient {
+    height: 50px; }
+    #navigation.gradient #logo {
+      left: 20px;
+      top: 10px; }
+      #navigation.gradient #logo img {
+        width: 72px;
+        height: 36px; }
+    #navigation.gradient .menu-content {
+      padding-top: 5px; }
+      #navigation.gradient .menu-content li {
+        font-size: 10px; }
   .photonav p {
     font-size: 18px; }
   #photo-container img {
@@ -445,7 +457,7 @@ article {
     width: 96%;
     padding: 100px 2%; }
     .proj-content .description span {
-      font-size: 22px; }
+      font-size: 20px; }
   .proj-container-container {
     width: 47%; }
     .proj-container-container .content-proj-container p {
@@ -463,16 +475,38 @@ article {
   #social a {
     margin-right: 3px; }
     #social a img {
-      width: 20px;
-      height: 20px; }
+      width: 25px;
+      height: 25px; }
   #social hr {
     width: 50px; } }
 
-@media only screen and (max-width: 667px), only screen and (max-device-width: 667px) and (orientation: portrait) {
+@media only screen and (max-width: 400px), only screen and (orientation: portrait) {
   /* portrait phones */
-  #container-before {
+  /* Removing landing page partial on portrait mode, because too hard to maintain*/
+  #initialpage-container {
     display: none; }
-  #container {
+  #webpage {
+    padding-top: 70px; }
+  .proj-overview img {
+    height: 60px; }
+  .proj-overview p {
+    font-size: 24px; }
+  #navigation.gradient #menu-icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    padding: 10px; }
+    #navigation.gradient #menu-icon img {
+      height: 30px;
+      width: 30px; }
+    #navigation.gradient #menu-icon #exit {
+      display: none; }
+  #navigation.gradient #container-before {
+    display: none; }
+  #navigation.gradient #container {
+    overflow-y: scroll;
     left: 0;
     top: 0;
     position: fixed;
@@ -482,71 +516,44 @@ article {
     opacity: 0;
     background-color: rgba(21, 24, 28, 0.95);
     width: 100%;
-    height: 100%;
+    height: 200%;
     z-index: 4; }
-  .proj-overview p {
-    font-size: 24px; }
-  #initialpage-container {
-    height: 45%; }
-    #initialpage-container #fulltextcontainer-top {
-      height: 85%; }
-    #initialpage-container #fulltext, #initialpage-container #fulltext-top {
-      vertical-align: middle; }
-  #menubar {
-    float: none;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    z-index: 3; }
-    #menubar ul {
-      display: block;
+    #navigation.gradient #container #menubar {
       float: none;
-      padding: 0; }
-      #menubar ul li {
-        text-align: center;
-        border: none;
+      display: table;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+      height: 50%;
+      width: 100%; }
+      #navigation.gradient #container #menubar ul.menu-content {
+        display: table-cell;
+        vertical-align: middle;
         float: none;
-        margin: 0;
-        padding: 10%;
-        display: block;
-        transition: all 0.5s ease; }
-        #menubar ul li a {
-          font-size: 40px;
-          display: inline; }
-          #menubar ul li a:hover {
+        padding: 0; }
+        #navigation.gradient #container #menubar ul.menu-content li {
+          text-align: center;
+          border: none;
+          float: none;
+          margin: 0;
+          padding: 10%;
+          display: block;
+          transition: all 0.5s ease;
+          font-size: 40px; }
+          #navigation.gradient #container #menubar ul.menu-content li a {
+            font-size: inherit; }
+          #navigation.gradient #container #menubar ul.menu-content li:hover {
             cursor: pointer; }
-  #menu-icon {
-    display: inline-block;
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    padding: 20px; }
-    #menu-icon img {
-      height: 50px;
-      width: 50px; }
-    #menu-icon #exit {
-      display: none; }
-  .proj-container-container .content-proj-container p {
-    font-size: 20px; }
-  .proj-container-container .content-proj-container li {
-    font-size: 16px; }
-  .proj-content .description span {
-    font-size: 18px; } }
-
-@media only screen and (max-device-width: 667px) and (orientation: portrait) {
-  .proj-container-container .content-proj-container p {
-    font-size: 26px; }
-  .proj-container-container .content-proj-container li {
-    font-size: 22px; } }
-
-@media only screen and (max-device-width: 440px) and (orientation: portrait) {
   .proj-container-container {
     width: 100%;
     margin: 15px 0; }
-  .proj-content .description span {
-    font-size: 14px; }
+    .proj-container-container .content-proj-container {
+      padding-top: 15%;
+      padding-bottom: 15%; }
+  .proj-content {
+    padding-top: 0px; }
+    .proj-content .description span {
+      font-size: 14px; }
   #photo-container img {
     margin: 1%;
     width: 98%; }

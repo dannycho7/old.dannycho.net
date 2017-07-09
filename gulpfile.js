@@ -3,13 +3,13 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
 gulp.task('sass', function () {
-	return gulp.src('./resources/assets/sass/application.scss')
+	return gulp.src('./resources/assets/sass/build.scss')
 			.pipe(sass().on('error', sass.logError))
 			.pipe(gulp.dest('./public_html/css'));
 });
 
 gulp.task('sass:watch', function () {
-	gulp.watch('./resources/assets/sass/application.scss', ['sass']);
+	gulp.watch('./resources/assets/sass/build.scss', ['sass']);
 });
 
 gulp.task('concat', function() {
