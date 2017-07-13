@@ -1,5 +1,5 @@
 <p>
-	Hello! My name is <strong>Danny Cho</strong>, and I like <strong>building</strong> things.
+	Hello, I'm <strong>Danny Cho</strong>. I like <strong>programming</strong> and <strong>building</strong> things.
 	I have been <strong>coding</strong> &amp; attending <strong>hackathons</strong> for 2 years.
 	I am currently a <strong>Computer Science</strong> major at <strong>UC Santa Barbara</strong>.
 	I always look forward to meeting new people and collaborating on <strong>projects</strong>.
