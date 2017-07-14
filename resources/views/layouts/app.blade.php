@@ -15,21 +15,26 @@
   </head>
   <body onresize="menuswitch()">
     <?php
+      function isActive($route) {
+        return Route::getCurrentRoute() && Route::getCurrentRoute()->getName() == $route;
+      }
+    ?>
+    <?php
       $links = [
         [
           'href' => URL::route('index'),
           'display' => 'home',
-          'active' => (Route::getCurrentRoute()->getName() == 'index')
+          'active' => isActive('index')
         ],
         [
           'href' => URL::route('projects'),
           'display' => 'projects',
-          'active' => (Route::getCurrentRoute()->getName() == 'projects')
+          'active' => isActive('projects')
         ],
         [
           'href' => URL::route('photos'),
           'display' => 'photos',
-          'active' => (Route::getCurrentRoute()->getName() == 'photos')
+          'active' => isActive('photos')
         ]
       ];
     ?>
