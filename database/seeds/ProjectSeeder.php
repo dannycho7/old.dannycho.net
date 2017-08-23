@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Models\Project;
 
-class DatabaseSeeder extends Seeder
+class ProjectSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -92,7 +92,7 @@ class ProjectsTableSeeder extends Seeder {
         		"headline" => "36 Hour Hackathon",
         		"purpose" => "Co-Director & Dev Lead",
         		"year" => 2017,
-        		"technology_list" => "Node.js, express-form-post, MongoDB, and PostgreSQL",
+        		"technology_list" => "Node.js, React.js, express-form-post, MongoDB, and PostgreSQL",
         		"description" => "Organizing SB Hacks IV at UC Santa Barbara which hosts 450 students annually for a 36-hour hackathon. I will add a more in-depth description after the event! SB Hacks IV will take place on Jan 19-21 2018. If you are an interested sponsor feel free to reach out!"
         	),
         	array(
