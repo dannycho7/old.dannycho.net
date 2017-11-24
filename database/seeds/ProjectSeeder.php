@@ -88,12 +88,12 @@ class ProjectsTableSeeder extends Seeder {
         	),
         	array(
         		"name" => "SB Hacks IV",
-        		"download_link" => "http://sbhacks.com",
+        		"download_link" => "https://www.sbhacks.com",
         		"headline" => "36 Hour Hackathon",
         		"purpose" => "Co-Director & Dev Lead",
         		"year" => 2017,
-        		"technology_list" => "Node.js, React.js, express-form-post, MongoDB, and PostgreSQL",
-        		"description" => "Organizing SB Hacks IV at UC Santa Barbara which hosts 450 students annually for a 36-hour hackathon. I will add a more in-depth description after the event! SB Hacks IV will take place on Jan 19-21 2018. If you are an interested sponsor feel free to reach out!"
+        		"technology_list" => "Node.js, React.js (Redux), MongoDB, and PostgreSQL",
+        		"description" => "Organizing SB Hacks IV at UC Santa Barbara which hosts 500 students annually for a 36-hour hackathon. I will add a more in-depth description after the event! SB Hacks IV will take place on Jan 19-21 2018. If you are an interested sponsor feel free to reach out!"
         	),
         	array(
         		"name" => "express-form-post",
